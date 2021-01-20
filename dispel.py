@@ -16,7 +16,7 @@ def picker():
             else:
                 break
         except ValueError as e:
-            print("Please only use one of the provided numbers.")
+            print("Please only use one of the provided numbers." + "\n" + "---" * 10)
     return option
 
 
