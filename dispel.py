@@ -4,7 +4,6 @@ import time
 import sys
 
 
-
 def picker():
     option = 0
     while True:
@@ -19,6 +18,7 @@ def picker():
         except ValueError as e:
             print("Please only use one of the provided numbers.")
     return option
+
 
 def breaker():
     string_split = input("Input string to split: ").lower().replace(" ",
@@ -51,12 +51,13 @@ def breaker():
         except Exception as e:
             print("Unable to break {0} from file: {1} due to error: {2}".format(string_split, active_file,
                                                                                 e))  # Error message in case something goes awry
+
+
 while True:
     option = picker()
-    if option == "1":
+    if option == 1:
         breaker()
 
-
-#print("Audit process complete. Exiting in 10 seconds...")
+# print("Audit process complete. Exiting in 10 seconds...")
 # time.sleep(10)
 # sys.exit()
