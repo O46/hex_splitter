@@ -57,6 +57,10 @@ while True:
     option = picker()
     if option == 1:
         breaker()
+    elif option == 2:
+        pass
+    elif option == 3:
+        sys.exit()
 
 # print("Audit process complete. Exiting in 10 seconds...")
 # time.sleep(10)
